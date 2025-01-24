@@ -74,7 +74,10 @@ nav {
 .nav-socials {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.2rem;
+}
+.nav-socials i {
+    font-size: 1.5rem;
 }
 .menu-btn i {
     font-size: 1.5rem;
@@ -133,6 +136,53 @@ nav {
     color: #fff;
     border: 1px solid #fff;
 }
+.hero {
+    display: grid;
+    z-index: 10;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+   text-align: left;
+}
+.album {
+    font-size: 5rem;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    letter-spacing: .3rem;
+}
+.artist {
+    font-size: 4rem;
+    color: #fff;
+    letter-spacing: .3rem;
+}
+.right .btn {
+    display: flex;
+    gap: 1rem;
+}
+.right .btn a {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+.play-btn i,
+.share-btn i {
+    margin-right: 1rem;
+}
+.play-btn {
+    color: #fff;
+    background-color: rgb(230, 105, 52);
+}
+.share-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
