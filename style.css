@@ -8,6 +8,7 @@
 body {
     font-family: "Passion One", serif;
     overflow-x: hidden;
+    background-color: #000;
 }
 a {
     text-decoration: none;
@@ -16,6 +17,11 @@ a {
 }
 li {
     list-style: none;
+}
+.section {
+    padding: 1rem 7rem;
+    background-color: #000;
+    color: #fff;
 }
 .hero-section {
     position: relative;
@@ -61,7 +67,7 @@ nav {
     padding: 2rem 3rem;
     display: flex;
     justify-content: space-between;
-    z-index: 5; 
+    z-index: 50; 
     /* background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(5px);  */
     
@@ -181,8 +187,56 @@ nav {
     color: #fff;
     border: 1px solid #fff;
 }
+.stream-section {
+    margin-top: 2rem;
+    align-items: start;
+    margin-bottom: 4rem;
+}
+.section-title {
+    font-size: 4rem;
+    letter-spacing: .3rem;
+    margin-bottom: 3rem;
+}
+.stream-icon i {
+    color: #fff;
+    font-size: 2rem;
+    padding: 1.5rem;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+.stream-icon i:nth-child(1) {
+    border-left: 1px solid #fff;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+th {
 
-
+    display: none;
+}
+tr {
+    background-color: #000;
+    color: #fff;
+    font-size: 1.5rem;
+}
+/* tr:nth-child(even) {
+    background-color: #383838;
+} */
+/* tr:hover {
+    background-color: #fff;
+    color: ;
+} */
+.video-container {
+    width: 100%;
+    padding-bottom: 56.25%; 
+    position: relative;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
@@ -217,6 +271,23 @@ nav {
     .nav-socials i {
         font-size: 1.2rem;
     }
+    .section {
+        padding: 1rem 2rem;
+    }
+    .stream-icon i {
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+    .section-title {
+        font-size: 3rem;
+    }
+    .hero {
+        grid-template-columns: 1fr;
+        margin-top: 7rem;
+    }
+    .album, .artist {
+        font-size: 3rem;
+    }
 }
 @media screen and (max-width: 600px) {
    
@@ -226,10 +297,20 @@ nav {
     .nav-socials {
         display: none;
     }
+    .stream-icon i {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .section-title {
+        font-size: 2.5rem;
+    }
+    .album, .artist {
+        font-size: 2.5rem;
+    }
 }
 /* For small devices */
 @media screen and (max-width: 450px) {
-
+   
 }
 @media screen and (max-width: 320px) {
 }
